@@ -1,0 +1,19 @@
+{
+  "name": "agiflow-ai-plugin",
+  "displayName": "Agiflow",
+  "version": "0.1.0",
+  "description": "Access Agiflow tools directly from Cursor.",
+  "author": {
+    "name": "AgiFlow"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ai-plugin",
+    "claude-code",
+    "codex",
+    "cursor",
+    "gemini",
+    "mcp"
+  ],
+  "logo": "assets/logo.svg"
+}

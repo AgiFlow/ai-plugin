@@ -1,0 +1,17 @@
+{
+  "name": "agiflow-ai-plugin",
+  "version": "0.1.0",
+  "description": "Access Agiflow tools, skills, and MCP-backed workflows directly from Claude Code.",
+  "author": {
+    "name": "AgiFlow"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ai-plugin",
+    "claude-code",
+    "codex",
+    "cursor",
+    "gemini",
+    "mcp"
+  ]
+}

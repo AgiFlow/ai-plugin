@@ -1,0 +1,37 @@
+{
+  "name": "agiflow-ai-plugin",
+  "version": "0.1.0",
+  "description": "Agiflow AI plugin",
+  "author": {
+    "name": "AgiFlow"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ai-plugin",
+    "codex",
+    "claude-code",
+    "cursor",
+    "gemini",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Agiflow",
+    "shortDescription": "Use Agiflow tools in Codex",
+    "longDescription": "Access Agiflow tools, skills, and MCP-backed workflows directly from Codex.",
+    "developerName": "AgiFlow",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Show me the key Agiflow workflows",
+      "Find open Agiflow issues",
+      "Help me use the Agiflow plugin"
+    ],
+    "brandColor": "#F9BD2B",
+    "logo": "./assets/logo.svg"
+  },
+  "mcpServers": "./.mcp.json"
+}
