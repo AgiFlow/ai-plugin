@@ -1,14 +1,16 @@
 # Agiflow AI Plugin
 
-This repository packages the Agiflow plugin for Codex, Claude Code, Cursor, and Gemini CLI.
+This repository packages the Agiflow plugin for Codex, Claude Code, Cursor, Antigravity, and Gemini CLI.
 
 ## Layout
 
 - `.codex-plugin/plugin.json` for Codex
 - `.claude-plugin/plugin.json` for Claude Code
 - `.cursor-plugin/plugin.json` for Cursor
+- `plugin.json` (root marker) for Antigravity
 - `references/plugin-types.md` for client compatibility notes
 - `.mcp.json` and `mcp.json` for MCP client wiring
+- `mcp_config.json` for Antigravity MCP wiring
 - `gemini-extension.json` and `GEMINI.md` for Gemini CLI
 
 ## Development
