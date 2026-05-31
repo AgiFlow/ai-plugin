@@ -4,12 +4,10 @@
   "description": "Access Agiflow tools directly from Gemini CLI.",
   "mcpServers": {
     "agiflow-ai-plugin": {
-      "command": "npx",
+      "command": "sh",
       "args": [
-        "mcp-remote@latest",
-        "${AGIFLOW_AI_PLUGIN_MCP_URL:-https://agiflow.io/api/v1/mcp}",
-        "--header",
-        "x-agiflow-mcp-consumer:plugin"
+        "-c",
+        "exec npx mcp-remote@latest \"${AGIFLOW_AI_PLUGIN_MCP_URL:-https://agiflow.io/api/v1/mcp}\" --header \"x-agiflow-mcp-consumer:plugin\""
       ]
     }
   },

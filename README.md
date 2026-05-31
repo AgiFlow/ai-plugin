@@ -41,13 +41,19 @@ is MCP config — the bundled `.mcp.json` provides it.
 
 ### Codex
 
-Load the plugin directory so Codex picks up `.codex-plugin/plugin.json`:
+Add the AgiFlow plugin marketplace, then install the plugin from that marketplace:
 
 ```bash
-codex --plugin-dir ./agiflow-ai-plugin
+codex plugin marketplace add AgiFlow/ai-plugin
+codex plugin add agiflow-ai-plugin@agiflow
 ```
 
-Once published to a marketplace: `codex plugin marketplace add <your-remote>/agiflow-ai-plugin`.
+For local development, point Codex at this checkout as a marketplace root:
+
+```bash
+codex plugin marketplace add ./agiflow-ai-plugin
+codex plugin add agiflow-ai-plugin@agiflow
+```
 
 ### Gemini CLI
 
