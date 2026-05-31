@@ -2,6 +2,7 @@
   "name": "agiflow-ai-plugin",
   "version": "0.1.0",
   "description": "Agiflow AI plugin",
+  "repository": "https://github.com/AgiFlow/ai-plugin",
   "author": {
     "name": "AgiFlow"
   },
@@ -31,6 +32,7 @@
       "Help me use the Agiflow plugin"
     ],
     "brandColor": "#F9BD2B",
+    "composerIcon": "./assets/logo.svg",
     "logo": "./assets/logo.svg"
   },
   "mcpServers": "./.mcp.json"
