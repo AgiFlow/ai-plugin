@@ -32,7 +32,7 @@
       "Help me use the Agiflow plugin"
     ],
     "brandColor": "#F9BD2B",
-    "composerIcon": "./assets/logo.svg",
+    "composerIcon": "./assets/icon.png",
     "logo": "./assets/logo.svg"
   },
   "mcpServers": "./.mcp.json"
