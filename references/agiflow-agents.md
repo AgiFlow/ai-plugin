@@ -61,17 +61,17 @@ Use the `tags` field on tasks for categorization. Format: `type:label`
 
 **Required prefixes** (use one per task):
 
-- `feat:` — New feature work (e.g. `feat:auth`, `feat:billing`)
-- `bug:` — Bug fix (e.g. `bug:checkout`, `bug:login`)
-- `chore:` — Maintenance, config, deps (e.g. `chore:deps`, `chore:ci`)
-- `refactor:` — Code improvement without behavior change (e.g. `refactor:api-layer`)
-- `spike:` — Research or feasibility exploration (e.g. `spike:perf`, `spike:feasibility`)
+- `feat:`: New feature work (e.g. `feat:auth`, `feat:billing`)
+- `bug:`: Bug fix (e.g. `bug:checkout`, `bug:login`)
+- `chore:`: Maintenance, config, deps (e.g. `chore:deps`, `chore:ci`)
+- `refactor:`: Code improvement without behavior change (e.g. `refactor:api-layer`)
+- `spike:`: Research or feasibility exploration (e.g. `spike:perf`, `spike:feasibility`)
 
 **Optional prefixes** (add for grouping):
 
-- `epic:` — Cross-cutting initiative (e.g. `epic:onboarding`, `epic:payments`)
-- `domain:` — Domain area (e.g. `domain:billing`, `domain:auth`)
-- `pkg:` — Package scope in monorepo (e.g. `pkg:backend-api`, `pkg:web-app`)
+- `epic:`: Cross-cutting initiative (e.g. `epic:onboarding`, `epic:payments`)
+- `domain:`: Domain area (e.g. `domain:billing`, `domain:auth`)
+- `pkg:`: Package scope in monorepo (e.g. `pkg:backend-api`, `pkg:web-app`)
 
 **Multiple tags**: Comma-separated (e.g. `feat:auth,domain:auth,epic:onboarding`)
 
