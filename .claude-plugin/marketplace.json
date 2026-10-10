@@ -1,0 +1,16 @@
+{
+  "name": "agiflow",
+  "owner": {
+    "name": "AgiFlow"
+  },
+  "metadata": {
+    "description": "Official AgiFlow plugin for project management in Claude."
+  },
+  "plugins": [
+    {
+      "name": "agiflow",
+      "source": "./",
+      "description": "Access Agiflow tools, skills, and MCP-backed workflows directly from Claude Code."
+    }
+  ]
+}

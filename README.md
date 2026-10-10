@@ -12,9 +12,16 @@ marketplace, load it as a local plugin directory.
 
 ### Claude Code
 
+Install from the AgiFlow marketplace (Claude Code 2.1.275 or later):
+
+```
+/plugin install agiflow --marketplace AgiFlow/ai-plugin
+```
+
+For local development, load this checkout directly:
+
 ```bash
-git clone <your-remote>/agiflow-ai-plugin
-claude --plugin-dir ./agiflow-ai-plugin
+claude --plugin-dir ./ai-plugin
 ```
 
 The bundled `.mcp.json` wires the AgiFlow MCP server automatically. Use `/mcp` inside Claude Code to
@@ -45,14 +52,14 @@ Add the AgiFlow plugin marketplace, then install the plugin from that marketplac
 
 ```bash
 codex plugin marketplace add AgiFlow/ai-plugin
-codex plugin add agiflow-ai-plugin@agiflow
+codex plugin add agiflow@agiflow
 ```
 
 For local development, point Codex at this checkout as a marketplace root:
 
 ```bash
 codex plugin marketplace add ./agiflow-ai-plugin
-codex plugin add agiflow-ai-plugin@agiflow
+codex plugin add agiflow@agiflow
 ```
 
 ### Gemini CLI
@@ -84,8 +91,8 @@ to coding clients but are not part of the ChatGPT submission bundle.
 ## How to develop
 
 ```bash
-git clone <your-remote>/agiflow-ai-plugin
-claude --plugin-dir ./agiflow-ai-plugin
+git clone https://github.com/AgiFlow/ai-plugin.git
+claude --plugin-dir ./ai-plugin
 ```
 
 - Add new workflow instructions under `skills/<name>/SKILL.md`.
@@ -94,7 +101,7 @@ claude --plugin-dir ./agiflow-ai-plugin
 
 ## Features
 
-This plugin connects to the AgiFlow MCP server (`https://agiflow.io/api/v1/mcp`) and exposes AgiFlow
+This plugin connects to the AgiFlow MCP server (`https://agiflow.io/api/v1/mcp-app`) and exposes AgiFlow
 tools across these categories:
 
 - **Projects**: create, inspect, and update projects and their statuses
@@ -148,7 +155,7 @@ For a self-hosted AgiFlow instance, point the MCP wiring at your endpoint via th
 `AGIFLOW_AI_PLUGIN_MCP_URL` environment variable (consumed by `gemini-extension.json`):
 
 ```bash
-export AGIFLOW_AI_PLUGIN_MCP_URL="https://mcp.your-agiflow-instance.com/api/v1/mcp"
+export AGIFLOW_AI_PLUGIN_MCP_URL="https://mcp.your-agiflow-instance.com/api/v1/mcp-app"
 ```
 
 For other clients, edit the server URL in `.mcp.json`, `mcp.json`, and `mcp_config.json`.

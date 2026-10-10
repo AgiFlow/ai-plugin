@@ -1,7 +1,7 @@
 {
-  "name": "agiflow-ai-plugin",
+  "name": "agiflow",
   "displayName": "Agiflow",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Access Agiflow tools directly from Cursor.",
   "author": {
     "name": "AgiFlow"

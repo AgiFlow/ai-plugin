@@ -1,6 +1,6 @@
 {
-  "name": "agiflow-ai-plugin",
-  "version": "0.2.0",
+  "name": "agiflow",
+  "version": "0.3.0",
   "description": "Access Agiflow tools, skills, and MCP-backed workflows directly from Claude Code.",
   "author": {
     "name": "AgiFlow"
