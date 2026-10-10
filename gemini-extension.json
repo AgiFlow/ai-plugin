@@ -1,6 +1,6 @@
 {
   "name": "agiflow",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Access Agiflow tools directly from Gemini CLI.",
   "mcpServers": {
     "agiflow-ai-plugin": {

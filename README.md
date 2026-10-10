@@ -149,6 +149,35 @@ Shared guidelines (status model, transitions, tags, work-unit sizing) live in
 > What should an agent pick up next?
 ```
 
+## Data handling and external services
+
+The declared connector is `https://agiflow.io/api/v1/mcp-app`, authenticated with OAuth.
+Agiflow can read and store names, email addresses, member profiles, tasks, comments, and artifacts
+that you provide or authorize it to access. Workspace content is retained beyond 30 days unless
+removed, subject to the [Privacy policy](https://agiflow.io/privacy-policy).
+
+Some workflows can send data beyond the declared Agiflow connector:
+
+- **External MCP integrations:** When an allowed external tool is invoked through `task_exec` or
+  `task_exec_code`, Agiflow forwards the tool arguments to the MCP server configured for your
+  workspace and task. Destinations depend on the integrations you enable; there is no fixed
+  third-party server list bundled with this plugin. Arguments can include project content and
+  personal data supplied for the requested operation. The external provider's privacy policy applies.
+- **Approved code scripts:** `task_exec_code` can call task-allowed MCP tools. An approved project
+  script can also send HTTPS requests, including request bodies, to hosts permitted by its approved
+  environment configuration. One-off code has no direct network access. Approving a script or tool
+  can authorize reads and writes in an external service.
+- **Coding-client tools:** Coding workflows instruct the AI client to use tools in your environment,
+  including `vibe-lint`, local tests, Git, and pull-request tooling. Source code and project context
+  can be passed to those tools or your configured Git hosting service. Their destinations depend on
+  your client configuration. Gemini CLI downloads and runs `mcp-remote` from npm via `npx`.
+- **Optional analytics:** When configured by the Agiflow deployment, the backend sends MCP usage
+  events to PostHog. These events can include user, organization, project, task, and session IDs,
+  client information, tool names, timing, success/error information, and submitted feedback.
+
+Only send data to integrations and scripts you trust. Review their permissions and data handling
+before enabling them. Also see the [Terms of Service](https://agiflow.io/terms-and-conditions).
+
 ## Self-hosted
 
 For a self-hosted AgiFlow instance, point the MCP wiring at your endpoint via the
