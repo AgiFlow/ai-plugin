@@ -7,6 +7,8 @@ description: Diagnose stalled, blocked, overloaded, or unhealthy Agiflow project
 
 Diagnose before prescribing. Read the workspace first and separate evidence from inference.
 
+Use only the AgiFlow MCP tools named below. Do not run local programs, execute scripts, or use other connectors. If a required tool is unavailable, report the limitation and stop.
+
 ## Workflow
 
 1. Call `get_current_scope` and resolve the target project when one is specified.
@@ -23,7 +25,7 @@ Diagnose before prescribing. Read the workspace first and separate evidence from
 5. Classify each finding as Blocker, Warning, or Note.
 6. Recommend one specific action for each finding and explain the expected impact.
 7. Present the report and ask which actions the user approves.
-8. Execute only approved actions with the appropriate tools, such as `update_task`, `create_task`, `batch_create_tasks`, or `create_task_comment`.
+8. Carry out only approved actions using `update_task`, `create_task`, `batch_create_tasks`, or `create_task_comment`.
 9. Re-read affected records to verify the result.
 
 ## Mutation Rules

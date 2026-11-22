@@ -7,6 +7,8 @@ description: Assess an authenticated Agiflow workspace and recommend the right n
 
 Act as a project-management coach. Diagnose the workspace before recommending action.
 
+Use only the AgiFlow MCP tools named below. Do not run local programs, execute scripts, or use other connectors. If a required tool is unavailable, report the limitation and stop.
+
 ## Workflow
 
 1. Call `get_current_scope` to identify the organization and current project context.

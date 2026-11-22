@@ -7,6 +7,8 @@ description: Refine an existing Agiflow task into an unambiguous, testable speci
 
 Make the selected task ready for confident execution while preserving its original intent.
 
+Use only the AgiFlow MCP tools named below. Do not run local programs, execute scripts, or use other connectors. If a required tool is unavailable, report the limitation and stop.
+
 ## Workflow
 
 1. Resolve the task with `get_current_scope`, `list_projects`, `list_tasks`, or `get_task` as needed.

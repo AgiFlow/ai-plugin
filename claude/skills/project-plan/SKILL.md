@@ -7,6 +7,8 @@ description: Turn a product goal or feature request into a clear Agiflow project
 
 Create a focused near-term plan. Plan tasks first and leave work-unit creation to backlog grooming.
 
+Use only the AgiFlow MCP tools named below. Do not run local programs, execute scripts, or use other connectors. If a required tool is unavailable, report the limitation and stop.
+
 ## Workflow
 
 1. Call `get_current_scope` and resolve the target project with `list_projects` when needed.

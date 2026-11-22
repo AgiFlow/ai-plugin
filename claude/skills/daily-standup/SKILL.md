@@ -7,6 +7,8 @@ description: Produce a concise read-only Agiflow status summary covering complet
 
 Give a brief, evidence-based project pulse. Do not modify workspace data.
 
+Use only the AgiFlow MCP tools named below. Do not run local programs, execute scripts, or use other connectors. If a required tool is unavailable, report the limitation and stop.
+
 ## Workflow
 
 1. Call `get_current_scope` and resolve the requested project when needed.
