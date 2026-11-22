@@ -1,0 +1,25 @@
+{
+  "name": "agiflow",
+  "version": "0.3.1",
+  "description": "Access Agiflow tools, skills, and MCP-backed workflows directly from Claude Code.",
+  "author": {
+    "name": "AgiFlow"
+  },
+  "license": "MIT",
+  "privacyPolicyUrl": "https://agiflow.io/privacy-policy",
+  "keywords": [
+    "claude-code",
+    "project-management",
+    "mcp"
+  ],
+  "icon": "./assets/icon.png",
+  "mcpServers": {
+    "agiflow": {
+      "type": "http",
+      "url": "https://agiflow.io/api/v1/mcp-app",
+      "headers": {
+        "x-agiflow-mcp-consumer": "plugin"
+      }
+    }
+  }
+}
